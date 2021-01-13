@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://www.untitledreport.tokyo/clove/",
+  "homepage": "https://www.untitledreport.tokyo",
   "eslintConfig": {
     "extends": [
       "react-app",
