@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../../../neumorphism/vendor/@fortawesome/fontawesome-free/css/all.min.css';
 import '../../../../neumorphism/css/neumorphism.css';
+import '../../../../css/clove.css'
 
-const PLAN: string = 'replacing to React...';
+const PLAN: string = 'developing function of blog...';
 
 const PlaningList: React.FunctionComponent = () => {
 
