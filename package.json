@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://ysknsid25.github.io/clove/",
+  "homepage": "https://www.untitledreport.tokyo/",
   "eslintConfig": {
     "extends": [
       "react-app",
