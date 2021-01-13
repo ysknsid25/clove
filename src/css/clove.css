@@ -1,0 +1,12 @@
+.noneDotOfUl{
+
+    list-style: none; 
+    padding-left: 0;
+
+}
+
+.decimalUl{
+
+    list-style-type: decimal
+
+}
