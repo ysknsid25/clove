@@ -11,7 +11,7 @@ const ANIME_CONTENT = {
     contentsTitle: 'Anime', 
     lead: 'My favorite Anime Ranking of Top 5.', 
     ulClassName: 'decimalUl', 
-    contentsList: ['SHIROBAKO','Just Because!','シュタインズ・ゲート','ヴァイオレット・エヴァーガーデン','言の葉の庭'], 
+    contentsList: ['SHIROBAKO','Just Because!','クオリディア・コード','シュタインズ・ゲート','ヴァイオレット・エヴァーガーデン'], 
     footerConstents: ['I choose Famous as Anime. I will be described later Light Novel and Manga.']
 };
 
