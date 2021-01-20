@@ -42,3 +42,7 @@ I add Google Adsense Tags.
 ### 1.1.0
 
 Replace simple HTML to React App.
+
+### 1.1.1
+
+add Twitter card to meta tag.
