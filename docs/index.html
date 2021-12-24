@@ -34,96 +34,269 @@
             property="og:image"
             content="https://www.untitledreport.tokyo/topImage.png"
         />
-        <link href="/static/css/clove.css" rel="stylesheet" />
-        <link href="/static/neumorphism/css/neumorphism.css" rel="stylesheet" />
+        <link href="./static/css/clove.css" rel="stylesheet" />
+        <link
+            href="./static/neumorphism/css/neumorphism.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./static/neumorphism/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="card bg-primary border-light shadow-soft">
-                    <img
-                        src="../../assets/img/blog/blog-article-1.jpg"
-                        class="card-img-top rounded-top"
-                        alt="Themesberg office"
-                    />
-                    <div class="card-body">
-                        <span class="h6 icon-tertiary small"
-                            ><span class="fas fa-medal mr-2"></span>Awards</span
-                        >
-                        <h3 class="h5 card-title mt-3">
-                            We partnered up with Google
-                        </h3>
-                        <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary btn-sm"
-                            >Learn More</a
-                        >
+        <main>
+            <div class="container my-4 mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h1 id="recent" class="display-3 mb-4">
+                            Untitled Report
+                        </h1>
+                        <p class="lead">Profile and My history of activity.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card bg-primary border-light shadow-soft">
-                    <div class="card-header p-3">
-                        <img
-                            src="../..//assets/img/blog/blog-article-2.jpg"
-                            class="card-img-top rounded"
-                            alt="Designer desk"
-                        />
-                    </div>
-                    <div class="card-body pt-2">
-                        <div
-                            class="
-                                media
-                                d-flex
-                                align-items-center
-                                justify-content-between
-                            "
-                        >
-                            <div class="post-group">
-                                <a
-                                    href="#"
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title=""
-                                    data-original-title="23k followers"
-                                >
-                                    <img
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4">
+                        <!-- Profile Card -->
+                        <div class="profile-card mb-3">
+                            <div
+                                class="
+                                    card
+                                    bg-primary
+                                    shadow-inset
+                                    border-light
+                                    text-center
+                                "
+                            >
+                                <div class="card-header">
+                                    <div
                                         class="
-                                            avatar-sm
-                                            mr-2
-                                            img-fluid
-                                            rounded-circle
+                                            profile-image
+                                            bg-primary
+                                            shadow-inset
+                                            border border-light
+                                            rounded
+                                            mx-auto
+                                            p-3
                                         "
-                                        src="../../assets/img/team/profile-picture-2.jpg"
-                                        alt="Jo portrait"
-                                    />
-                                    Jo J. Moore
-                                </a>
+                                    >
+                                        <img
+                                            src="./static/media/unnamed.83c11258.jpg"
+                                            class="card-img-top rounded"
+                                            alt="Ramen Tabetaro"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 mb-2">Ramen Tabetaro</h3>
+                                    <span
+                                        class="
+                                            h6
+                                            font-weight-normal
+                                            text-gray
+                                            mb-3
+                                        "
+                                        >Web Engineer(SRE)</span
+                                    >
+                                    <ul
+                                        class="
+                                            list-unstyled
+                                            d-flex
+                                            justify-content-center
+                                            mt-3
+                                            mb-4
+                                        "
+                                    >
+                                        <li>
+                                            <a
+                                                href="https://twitter.com/samurai_se"
+                                                target="_blank"
+                                                aria-label="twitter social link"
+                                                class="
+                                                    icon icon-xs icon-twitter
+                                                    mr-3
+                                                "
+                                            >
+                                                <span
+                                                    class="fab fa-twitter"
+                                                ></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://github.com/ysknsid25"
+                                                target="_blank"
+                                                aria-label="github social link"
+                                                class="
+                                                    icon icon-xs icon-facebook
+                                                    mr-3
+                                                "
+                                            >
+                                                <span
+                                                    class="fab fa-github"
+                                                ></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://note.com/samurai_se"
+                                                target="_blank"
+                                                aria-label="book-open social link"
+                                                class="
+                                                    icon icon-xs icon-book-open
+                                                    mr-3
+                                                "
+                                            >
+                                                <span
+                                                    class="fas fa-book-open"
+                                                ></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div
+                                        class="card-text font-weight-normal h6"
+                                    >
+                                        <p>ただのアニメオタクです。</p>
+                                        <ul class="noneDotOfUl">
+                                            <li>アニメ・漫画・ラノベ</li>
+                                            <li>ラーメン</li>
+                                            <li>野球</li>
+                                            <li>ファッション(にわか)</li>
+                                            <li>声優</li>
+                                        </ul>
+                                        <p>
+                                            水瀬いのりさんの<a
+                                                href="https://www.inoriminase.com/"
+                                                >ファンクラブ</a
+                                            >に入ってたりします。
+                                        </p>
+                                        <p>
+                                            <a href="https://mahjongsoul.com/"
+                                                >雀魂</a
+                                            >(雀傑★3)やってます。<br />
+                                            フレンドコード → 91969030
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="d-flex align-items-center">
-                                <span class="small"
-                                    ><span
-                                        class="far fa-calendar-alt mr-2"
-                                    ></span
-                                    >15 March 2020</span
+                        </div>
+                        <!-- End of Profile Card -->
+                        <div class="alert shadow-inset" role="alert">
+                            <span class="alert-inner--icon icon-lg"
+                                ><span class="far fa-thumbs-up"></span
+                            ></span>
+                            <span class="alert-heading"> 保有資格 </span>
+                            <ul class="decimalUl mt-3">
+                                <li>応用情報技術者</li>
+                                <li>LPIC Lv2</li>
+                                <li>Java SE8 Silver</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="card bg-primary border-light shadow-soft">
+                            <div class="card-header p-3">
+                                <img
+                                    src="./static/media/oshiani.png"
+                                    class="card-img-top rounded"
+                                    alt="oshiani"
+                                />
+                            </div>
+                            <div class="card-body pt-2">
+                                <div
+                                    class="
+                                        media
+                                        d-flex
+                                        align-items-center
+                                        justify-content-between
+                                    "
+                                >
+                                    <div class="post-group">
+                                        <span class="h6 icon-tertiary small"
+                                            ><span
+                                                class="fas fa-medal mr-2"
+                                            ></span
+                                            >My Second work</span
+                                        >
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="small"
+                                            ><span
+                                                class="far fa-calendar-alt mr-2"
+                                            ></span
+                                            >5 October 2020</span
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="h5 card-title mt-4">推しアニ！</h3>
+                                <p class="card-text">
+                                    自分のお気に入りのアニメや、見たいアニメを管理するアプリです。<br />
+                                    超A&Gの放送情報を確認することもできます。
+                                </p>
+                                <a
+                                    href="https://oshiani.net/"
+                                    class="btn btn-primary btn-sm"
+                                    >Go App</a
                                 >
                             </div>
                         </div>
-                        <h3 class="h5 card-title mt-4">
-                            We partnered up with Google
-                        </h3>
-                        <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary btn-sm"
-                            >Learn More</a
+                        <div
+                            class="
+                                card
+                                bg-primary
+                                border-light
+                                shadow-soft
+                                mt-4
+                            "
                         >
+                            <div class="card-header p-3">
+                                <img
+                                    src="./static/media/mahjanager.png"
+                                    class="card-img-top rounded"
+                                    alt="mahjanager"
+                                />
+                            </div>
+                            <div class="card-body pt-2">
+                                <div
+                                    class="
+                                        media
+                                        d-flex
+                                        align-items-center
+                                        justify-content-between
+                                    "
+                                >
+                                    <div class="post-group">
+                                        <span class="h6 icon-tertiary small"
+                                            ><span
+                                                class="fas fa-medal mr-2"
+                                            ></span
+                                            >My first work</span
+                                        >
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="small"
+                                            ><span
+                                                class="far fa-calendar-alt mr-2"
+                                            ></span
+                                            >13 June 2021</span
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="h5 card-title mt-4">Mahjanager</h3>
+                                <p class="card-text">
+                                    麻雀の得点計算アプリです。対局結果も管理することが出来ます。
+                                </p>
+                                <a
+                                    href="https://mahjanager.web.app/"
+                                    target="_blank"
+                                    class="btn btn-primary btn-sm"
+                                    >Go App</a
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
