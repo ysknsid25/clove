@@ -45,17 +45,51 @@
         />
     </head>
     <body>
+        <script>
+            const changeDisp = (targetBtnName, targetDisplayName) => {
+                const buttonName = ["myWorkInfoBtn", "detailProfileBtn"];
+                const displayName = ["myWorkInfo", "detailProfile"];
+                buttonName.map((btnName) => {
+                    const targetBtn = document.getElementById(btnName);
+                    if (targetBtnName == btnName) {
+                        targetBtn.className = "nav-link mb-sm-3 mb-md-0 active";
+                    } else {
+                        targetBtn.className = "nav-link mb-sm-3 mb-md-0";
+                    }
+                });
+                displayName.map((dispName) => {
+                    const targetDisp = document.getElementById(dispName);
+                    if (targetDisplayName == dispName) {
+                        targetDisp.style.display = "";
+                    } else {
+                        targetDisp.style.display = "none";
+                    }
+                });
+            };
+        </script>
         <main>
             <div class="container my-4 mb-4">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <h1 id="recent" class="display-3 mb-4">
-                            Untitled Report
-                        </h1>
-                        <p class="lead">Profile and My history of activity.</p>
+                        <div
+                            class="
+                                card
+                                bg-primary
+                                border-light
+                                shadow-soft
+                                mb-4
+                            "
+                        >
+                            <h1 id="recent" class="display-3 pt-4 pl-4">
+                                Untitled Report
+                            </h1>
+                            <p class="lead pb-2 pl-6">
+                                Profile and My history of activity.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-4">
+                <div class="row mt-2">
                     <div class="col-12 col-md-4">
                         <!-- Profile Card -->
                         <div class="profile-card mb-3">
@@ -214,104 +248,169 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-8">
-                        <div class="card bg-primary border-light shadow-soft">
-                            <div class="card-header p-3">
-                                <img
-                                    src="./static/media/oshiani.png"
-                                    class="card-img-top rounded"
-                                    alt="oshiani"
-                                />
-                            </div>
-                            <div class="card-body pt-2">
-                                <div
-                                    class="
-                                        media
-                                        d-flex
-                                        align-items-center
-                                        justify-content-between
-                                    "
-                                >
-                                    <div class="post-group">
-                                        <span class="h6 icon-tertiary small"
-                                            ><span
-                                                class="fas fa-medal mr-2"
-                                            ></span
-                                            >My Second work</span
-                                        >
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"
-                                            ><span
-                                                class="far fa-calendar-alt mr-2"
-                                            ></span
-                                            >5 October 2020</span
-                                        >
-                                    </div>
+                        <div class="mb-4 position-relative">
+                            <ul
+                                class="
+                                    nav nav-pills nav-fill
+                                    flex-column flex-sm-row
+                                "
+                            >
+                                <li class="nav-item">
+                                    <span
+                                        id="myWorkInfoBtn"
+                                        class="nav-link mb-sm-3 mb-md-0 active"
+                                        onClick="changeDisp('myWorkInfoBtn', 'myWorkInfo')"
+                                        >My Work List</span
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <span
+                                        id="detailProfileBtn"
+                                        class="nav-link mb-sm-3 mb-md-0"
+                                        onClick="changeDisp('detailProfileBtn', 'detailProfile')"
+                                        >Detail Profile</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="myWorkInfo">
+                            <div
+                                class="
+                                    card
+                                    bg-primary
+                                    border-light
+                                    shadow-inset
+                                "
+                            >
+                                <div class="card-header p-3">
+                                    <img
+                                        src="./static/media/oshiani.png"
+                                        class="card-img-top rounded"
+                                        alt="oshiani"
+                                    />
                                 </div>
-                                <h3 class="h5 card-title mt-4">推しアニ！</h3>
-                                <p class="card-text">
-                                    自分のお気に入りのアニメや、見たいアニメを管理するアプリです。<br />
-                                    超A&Gの放送情報を確認することもできます。
-                                </p>
-                                <a
-                                    href="https://oshiani.net/"
-                                    class="btn btn-primary btn-sm"
-                                    >Go App</a
-                                >
+                                <div class="card-body pt-2">
+                                    <div
+                                        class="
+                                            media
+                                            d-flex
+                                            align-items-center
+                                            justify-content-between
+                                        "
+                                    >
+                                        <div class="post-group">
+                                            <span class="h6 icon-tertiary small"
+                                                ><span
+                                                    class="fas fa-medal mr-2"
+                                                ></span
+                                                >My Second work</span
+                                            >
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="small"
+                                                ><span
+                                                    class="
+                                                        far
+                                                        fa-calendar-alt
+                                                        mr-2
+                                                    "
+                                                ></span
+                                                >5 October 2020</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <h3 class="h5 card-title mt-4">
+                                        推しアニ！
+                                    </h3>
+                                    <p class="card-text">
+                                        自分のお気に入りのアニメや、見たいアニメを管理するアプリです。<br />
+                                        超A&Gの放送情報を確認することもできます。
+                                    </p>
+                                    <a
+                                        href="https://oshiani.net/"
+                                        class="btn btn-primary btn-sm"
+                                        >Go App</a
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    card
+                                    bg-primary
+                                    border-light
+                                    shadow-inset
+                                    mt-4
+                                "
+                            >
+                                <div class="card-header p-3">
+                                    <img
+                                        src="./static/media/mahjanager.png"
+                                        class="card-img-top rounded"
+                                        alt="mahjanager"
+                                    />
+                                </div>
+                                <div class="card-body pt-2">
+                                    <div
+                                        class="
+                                            media
+                                            d-flex
+                                            align-items-center
+                                            justify-content-between
+                                        "
+                                    >
+                                        <div class="post-group">
+                                            <span class="h6 icon-tertiary small"
+                                                ><span
+                                                    class="fas fa-medal mr-2"
+                                                ></span
+                                                >My first work</span
+                                            >
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="small"
+                                                ><span
+                                                    class="
+                                                        far
+                                                        fa-calendar-alt
+                                                        mr-2
+                                                    "
+                                                ></span
+                                                >13 June 2021</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <h3 class="h5 card-title mt-4">
+                                        Mahjanager
+                                    </h3>
+                                    <p class="card-text">
+                                        麻雀の得点計算アプリです。対局結果も管理することが出来ます。
+                                    </p>
+                                    <a
+                                        href="https://mahjanager.web.app/"
+                                        target="_blank"
+                                        class="btn btn-primary btn-sm"
+                                        >Go App</a
+                                    >
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="
-                                card
-                                bg-primary
-                                border-light
-                                shadow-soft
-                                mt-4
-                            "
-                        >
-                            <div class="card-header p-3">
-                                <img
-                                    src="./static/media/mahjanager.png"
-                                    class="card-img-top rounded"
-                                    alt="mahjanager"
-                                />
-                            </div>
-                            <div class="card-body pt-2">
-                                <div
-                                    class="
-                                        media
-                                        d-flex
-                                        align-items-center
-                                        justify-content-between
-                                    "
-                                >
-                                    <div class="post-group">
-                                        <span class="h6 icon-tertiary small"
-                                            ><span
-                                                class="fas fa-medal mr-2"
-                                            ></span
-                                            >My first work</span
-                                        >
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"
-                                            ><span
-                                                class="far fa-calendar-alt mr-2"
-                                            ></span
-                                            >13 June 2021</span
-                                        >
-                                    </div>
+                        <div id="detailProfile" style="display: none">
+                            <div
+                                class="
+                                    card
+                                    bg-primary
+                                    border-light
+                                    shadow-inset
+                                "
+                            >
+                                <div class="card-body pt-2">
+                                    <h3 class="h5 card-title mt-2">
+                                        特に詳しく書きたいことはない笑
+                                    </h3>
+                                    <p class="card-text">
+                                        ↑のナビゲーションボタンを実装したかっただけなので、ここはまだほぼフリースペースです
+                                    </p>
                                 </div>
-                                <h3 class="h5 card-title mt-4">Mahjanager</h3>
-                                <p class="card-text">
-                                    麻雀の得点計算アプリです。対局結果も管理することが出来ます。
-                                </p>
-                                <a
-                                    href="https://mahjanager.web.app/"
-                                    target="_blank"
-                                    class="btn btn-primary btn-sm"
-                                    >Go App</a
-                                >
                             </div>
                         </div>
                     </div>
