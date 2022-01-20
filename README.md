@@ -1,4 +1,5 @@
 # Clove
+
 ## About
 
 Clove is spice, My portfolio and blog(blog is in the future).
@@ -17,12 +18,12 @@ While I develop my blog, I write article in [note](https://note.com/) or [Qiita]
 
 ## Deliverables
 
-* styleGuide
+-   styleGuide
 
-    * I referenced [this site](https://themesberg.com/docs/neumorphism-ui/getting-started/overview/).
-    * If you reference thi site, can make Neumorphism easily.
-    * this site serves sample sources in free.
-    * Read [this article](), and you can understand How to download mockup.
+    -   I referenced [this site](https://themesberg.com/docs/neumorphism-ui/getting-started/overview/).
+    -   If you reference thi site, can make Neumorphism easily.
+    -   this site serves sample sources in free.
+    -   Read [this article](), and you can understand How to download mockup.
 
 ## Release Note
 
@@ -46,3 +47,10 @@ Replace simple HTML to React App.
 ### 1.1.1
 
 add Twitter card to meta tag.
+
+## ローカルユーザーの切り替え
+
+```
+git config --global user.name
+git config --global user.email
+```
